@@ -13,8 +13,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: "testing githup action"
-        run: pwd
+      - name: "befor"
+        run: ls
     
-      - name: 'testing printing'
-        run: echo sara
+
+      - uses: actions/checkout@v3
+
+      - name: "after"
+        run: ls
